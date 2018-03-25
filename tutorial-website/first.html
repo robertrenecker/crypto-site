@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <meta property="og:type" content = "website">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Midterm study</title>
+
+    </head>
+  <body id="bootstrap-overrides">
+    <!-- Container 1 -->
+
+    <div class="jumbotron jumbotron-fluid text-center">
+      <h2 class="display-4">Public Cryptocurrency Prices</h2>
+      <p class="lead"> Bitcoin and Ethereum
+      </p>
+      <hr class="my-4">
+
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button" onClick="submitClick()">Sign Up</a>
+      </p>
+    </div>
+
+    <hr>
+
+
+    <div id="popup-btn" class="popup text-center">
+      <div class="container text-center">
+        <form id="form-id">
+          <div class="form-group">
+            <label for="Name">Name</label>
+            <input id="name" type="text" class="form-control" name="nameInput" placeholder="Name">
+            <small id="notice" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="Text">Text</label>
+            <input id="text" type="text" class="form-control" id="textInput" placeholder="Text">
+          </div>
+          <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-2 d-flex justify-content-center">
+              <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-1 d-flex justify-content-end" >
+              <button id="hide-jumbo" class="btn">Hide</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--login form-->
+    <div class="container">
+      <div class="div-main">
+        <input type="email" placeholder="1234@gmail.com"/>
+        <input type="password" placeholder="password"/>
+
+        <button> Login to Account </button>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class ="text-center" style="height:400px;">
+        <h1 class="fireHeading"></h1>
+    </div>
+      <!--Firebase Script -->
+      <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
+
+      <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBksuqSiMrozsrGjrjXCWbDtcqrQe2Uw-E",
+        authDomain: "cb-web-app-aa555.firebaseapp.com",
+        databaseURL: "https://cb-web-app-aa555.firebaseio.com",
+        projectId: "cb-web-app-aa555",
+        storageBucket: "",
+        messagingSenderId: "676435720730"
+      };
+      firebase.initializeApp(config);
+        </script>
+
+    <!-- Optional JavaScript -->
+    <script src="scripts/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    </body>
+  </html>

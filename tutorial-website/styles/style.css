@@ -1,0 +1,53 @@
+
+
+body{
+  background-color:rgba(200, 230, 300, 0.5);
+
+}
+.jumbotron{
+  border-radius:0;
+  background: url(../images/pexels-photo-248797.jpeg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+}
+
+
+.popup{
+  display: none;
+}
+
+
+.div-main input {
+  display:block;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  outline: none;
+  width:100%;
+  margin-bottom: 20px;
+
+
+}
+
+.div-main input:focus{
+  border: 1px solid #999;
+}
+
+
+.div-main button{
+  background: #5d8ffc;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width:100%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.div-main button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+}
