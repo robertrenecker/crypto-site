@@ -7,16 +7,27 @@
 **/
 //no use yet
 var fireHeading = document.getElementById("fireHeading");
-//ref robert child in DB
 var firebaseHeadingRef = firebase.database().ref().child("Robert");
+
+//retrieve current signed in user
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    document.getElementById("user_div").style.display = "block";
+    document.getElementById("login_div").style.display = "none";
+  } else {
+    // No user is signed in.
+    document.getElementById("user_div").style.display = "none";
+    document.getElementById("login_div").style.display = "block";
+
+  }
+});
 
 
 //Show to create an account
 function submitClick() {
   document.getElementById('popup-btn').style.display= 'block';
 }
-
-
 window.addEventListener("DOMContentLoaded", function () {
 
 
@@ -41,12 +52,37 @@ document.getElementById("hide-jumbo").addEventListener("click", function () {
 });
 
 
-//create a new account
-/*
-firebase.auth().createUserWithEmailAndPassword("robertrenecker@gmail.com", "fanfan").catch(function(error) {
+//click login function --
+function loginsbt(){
+  var userEmail = document.getElementById('email_field').value;
+  var userPassword = document.getElementById('password_field').value;
+  firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
+  // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+    window.alert("Error: " + errorMessage);
+  });
+}
+
+
+function logout(){
+  firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+  window.alert("Error: " + error);
+});
+}
+
+function createUser(){
+  var userEmail = document.getElementById('email_field').value;
+  var userPassword = document.getElementById('password_field').value;
+  firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
   // Handle Errors here.
   var errorCode = error.code;
   var errorMessage = error.message;
   // ...
+  window.alert("Error: " + errorMessage);
 });
-*/
+}

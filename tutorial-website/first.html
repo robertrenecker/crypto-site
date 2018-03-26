@@ -56,21 +56,43 @@
         </form>
       </div>
     </div>
-    <!--login form-->
-    <div class="container">
-      <div class="div-main">
-        <input type="email" placeholder="1234@gmail.com"/>
-        <input type="password" placeholder="password"/>
+    <!--login form request-->
 
-        <button> Login to Account </button>
+    <div id="login_div" class="div-main">
 
-
+        <input type="email" placeholder="1234@gmail.com" id="email_field"/>
+        <input type="password" placeholder="password" id="password_field"/>
+        <div class="row">
+          <div class="col-sm-6"><button onClick="loginsbt()"> Login to Account </button></div>
+          <div class="col-sm-6"><button onClick="createUser()"> Create Account </button></div>
         </div>
-
-
-
-      </div>
     </div>
+
+
+
+    <div id="user_div" class="main-logged-in">
+        <p class="text-center">
+          Hey congrats on logging in!
+          </p>
+        <button id="login-sbt" onClick="logout()">Logout</button>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class ="text-center" style="height:400px;">
         <h1 class="fireHeading"></h1>

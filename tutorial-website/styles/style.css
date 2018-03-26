@@ -14,7 +14,17 @@ body{
   display: none;
 }
 
+.div-main{
+  margin: 0px auto;
+  width: 40%;
 
+}
+
+.main-logged-in{
+  margin: 0px auto;
+  width: 20%;
+  display: none;
+}
 .div-main input {
   display:block;
   border: 1px solid #ccc;
@@ -22,7 +32,8 @@ body{
   border-radius: 5px;
   padding: 15px;
   outline: none;
-  width:100%;
+  width:50%;
+  margin: 0px auto;
   margin-bottom: 20px;
 
 
@@ -50,4 +61,42 @@ body{
   background: #fff;
   color: #5d8ffc;
   border: 1px solid #5d8ffc;
+}
+
+.main-logged-in button{
+  background: #5d8ffc;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top:15px;
+  display: block;
+  width:100%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.main-logged-in button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+}
+
+
+.main-logged-in p{
+  background: #5d8ffc;
+  border: 0px;
+  border-radius: 5px;
+  color: #fff;
+  display:block;
+  margin: 15px 0 0 0;
+  padding: 15px;
+
+}
+.main-logged-in p:hover{
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+
 }
