@@ -1,14 +1,38 @@
 
-
-body{
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.cover-heading h1{
+  text-align: center;
+}
+.body{
   background-color:rgba(200, 230, 300, 0.5);
+
 
 }
 .jumbotron{
   border-radius:0;
-  background: url(../images/pexels-photo-248797.jpeg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+  background: rgb(244, 66, 92) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
 }
 
+.input-group-prepend{
+  background: rgb(255,255,255);
+  margin: 0px 5px 0px 5px;
+  border-radius: 5px;
+}
 
 .popup{
   display: none;
@@ -24,6 +48,7 @@ body{
   margin: 0px auto;
   width: 20%;
   display: none;
+  align-items: right;
 }
 .div-main input {
   display:block;
@@ -75,6 +100,8 @@ body{
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+
+
 }
 
 .main-logged-in button:hover {
@@ -93,6 +120,7 @@ body{
   margin: 15px 0 0 0;
   padding: 15px;
 
+
 }
 .main-logged-in p:hover{
   background: #fff;
@@ -100,3 +128,7 @@ body{
   border: 1px solid #5d8ffc;
 
 }
+
+.site-wrapper-inner {
+    vertical-align: middle;
+  }

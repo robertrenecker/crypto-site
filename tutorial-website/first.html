@@ -15,71 +15,92 @@
     <title>Midterm study</title>
 
     </head>
-  <body id="bootstrap-overrides">
-    <!-- Container 1 -->
 
-    <div class="jumbotron jumbotron-fluid text-center">
-      <h2 class="display-4">Public Cryptocurrency Prices</h2>
-      <p class="lead"> Bitcoin and Ethereum
-      </p>
-      <hr class="my-4">
+              <body id="bootstrap-overrides">
+                <!-- Container 1 -->
 
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button" onClick="submitClick()">Sign Up</a>
-      </p>
-    </div>
+                  <div class="jumbotron jumbotron-fluid text-center">
+                    <h2 class="display-4">漢字　ネート</h2>
+                    <p class="lead"> Flash Cards
+                    </p>
+                    <hr class="my-4">
 
-    <hr>
+                    <p class="lead">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-secondary" type="button">Search</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                      </div>
+                    </p>
+                  </div>
 
-
-    <div id="popup-btn" class="popup text-center">
-      <div class="container text-center">
-        <form id="form-id">
-          <div class="form-group">
-            <label for="Name">Name</label>
-            <input id="name" type="text" class="form-control" name="nameInput" placeholder="Name">
-            <small id="notice" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="Text">Text</label>
-            <input id="text" type="text" class="form-control" id="textInput" placeholder="Text">
-          </div>
-          <div class="row">
-            <div class="col-sm-5"></div>
-            <div class="col-sm-2 d-flex justify-content-center">
-              <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
-            </div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-1 d-flex justify-content-end" >
-              <button id="hide-jumbo" class="btn">Hide</button></div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!--login form request-->
-
-    <div id="login_div" class="div-main">
-
-        <input type="email" placeholder="1234@gmail.com" id="email_field"/>
-        <input type="password" placeholder="password" id="password_field"/>
-        <div class="row">
-          <div class="col-sm-6"><button onClick="loginsbt()"> Login to Account </button></div>
-          <div class="col-sm-6"><button onClick="createUser()"> Create Account </button></div>
-        </div>
-    </div>
-
-
-
-    <div id="user_div" class="main-logged-in">
-        <p class="text-center">
-          Hey congrats on logging in!
-          </p>
-        <button id="login-sbt" onClick="logout()">Logout</button>
-      </div>
+                <hr>
+                <div class="clearfix"></div>
 
 
 
 
+                <!--Check check-->
+
+
+                <!--Check Check -->
+
+                  <div id="popup-btn" class="popup text-center">
+                    <div class="container text-center">
+                      <form id="form-id">
+                        <div class="form-group">
+                          <label for="Name">Name</label>
+                          <input id="name" type="text" class="form-control" name="nameInput" placeholder="Name">
+                          <small id="notice" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="Text">Text</label>
+                          <input id="text" type="text" class="form-control" id="textInput" placeholder="Text">
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-5"></div>
+                          <div class="col-sm-2 d-flex justify-content-center">
+                            <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                          <div class="col-sm-4"></div>
+                          <div class="col-sm-1 d-flex justify-content-end" >
+                            <button id="hide-jumbo" class="btn">Hide</button></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                <!--login form request-->
+
+                  <div id="login_div" class="div-main">
+
+                      <input type="email" placeholder="1234@gmail.com" id="email_field"/>
+                      <input type="password" placeholder="password" id="password_field"/>
+                      <div class="row">
+                        <div class="col-sm-6"><button onClick="loginsbt()"> Login to Account </button></div>
+                        <div class="col-sm-6"><button onClick="createUser()"> Create Account </button></div>
+                      </div>
+                  </div>
+
+
+
+                  <div id="user_div" class="main-logged-in">
+                    <div class="d-flex flex-column">
+
+                      <div class="p-2"><p class="text-center">
+                        Hey congrats on logging in!
+                        </p>
+                      </div>
+
+                      <div class="p-2"><button id="login-sbt" onClick="logout()">Logout</button>
+                      </div>
+
+                    </div>
+                </div>
+                <div class ="text-center" style="height:400px;">
+                    <h1 class="fireHeading"></h1>
+                </div>
+        
 
 
 
@@ -94,9 +115,12 @@
 
 
 
-    <div class ="text-center" style="height:400px;">
-        <h1 class="fireHeading"></h1>
-    </div>
+
+
+
+
+
+
       <!--Firebase Script -->
       <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
       <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
